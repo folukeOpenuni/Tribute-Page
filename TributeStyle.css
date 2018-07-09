@@ -1,0 +1,170 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Saira+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script|Pinyon+Script');
+
+body {
+    font-size: 16px;
+    margin: 0;
+/*    background-color: #CDDCE1; */
+}
+.logo {
+    float: left;
+    padding-left: 40px;
+    font-family: 'Pinyon Script', cursive;
+/*    font-family: 'Aguafina Script', cursive;    */
+}
+
+.logo a {
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+.heading {
+    font-family: Lobster;
+    text-align: center;
+}
+ul {
+    padding: 0;
+    margin: 0;
+} 
+
+ul a {
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    font-weight: 500;
+    margin: 16px 20px;
+    font-size: 1.25rem;
+/*    font-family: 'Saira Condensed';*/
+    font-family: Lobster;
+}
+
+header {
+    background-color: whitesmoke;
+/*    overflow: hidden;*/
+/*    left: 0;
+    top: 0;*/
+    text-align: right;
+/*    width: 100%;*/
+/*    z-index: 10000;*/
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.active {
+    font-size: 3.5vw;
+}
+/* underline link on hover */
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+    transition: opacity .25s linear, transform .2s ease-in-out;
+    position: absolute;
+    border-bottom: .1em solid #9290B7;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: .2em;
+}
+a:not(:hover)::after {
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+/*first conainter*/
+.Pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 70%;
+}
+.profilePic {
+/*    background-color: blueviolet;*/
+    background-color: #9097A3;
+/*        #9290B7;*/
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.intro {
+    background-color: #172325; 
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.intro-1 {
+    padding-bottom: 10px;
+}
+.sec-1 p {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+/*third container*/
+.top3 {
+    padding-bottom: 30px;
+}
+.book-image {
+    display: inline-block;
+    width: 33%;
+}
+img {
+    width: 100%;
+}
+.books {
+/*    background-color: */
+    background-color: #CDDCE1;
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+
+/*fourth container*/
+iframe {
+    width: 70%;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vidClip {
+    background-color: #172325;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.trailerHeading {
+    padding-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+}
+/*footer section */
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #CDDCE1;
+/*    background-color: #D15475;*/
+/*    background-color: #50757C;*/
+}
+
+@media screen and (max-width: 700px) {
+  li {
+      font-size: 0.95rem;
+  }
+  .book-image {
+      width: 100%;
+  }
+  iframe {
+      height: auto;
+  }
+  .books p {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+}
